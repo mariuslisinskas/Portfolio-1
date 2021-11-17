@@ -1,0 +1,293 @@
+@import 'reset';
+@import 'vars';
+@import 'grid';
+@import 'header';
+
+// MAIN//
+main{
+    display: block;
+    position: relative;
+    padding: 32px 32px 64px 32px;
+    font-family: 'rubik', serif;
+    .section-1{
+        display: block;
+        padding-top: 64px;
+        padding-bottom: 64px;
+        text-align: center;
+
+        h2{
+            margin: 0 0 16px 0;
+        }
+        h1, h2{
+            font-size: 4.6rem;
+            line-height: 5.2rem;
+            font-family: 'Playfair Display', serif;
+            display: block;
+            @media screen and (max-width: 770px) {
+                    font-size: 2.6rem;
+                    line-height: 1.4;
+            }          
+        }
+        a{
+            display: inline-block;
+            padding: 16px 32px 2px 32px;
+            span{
+                display: inline-block;
+                font-family: 'rubik', serif;
+                border-bottom: 2px solid #ffe55c;
+                &:hover{
+                        border-bottom: 2px solid #333333;
+                }
+                svg{
+                width: 20px;
+                height: 20px;
+                vertical-align: middle;
+            }
+            
+            }
+        }
+    }
+    .section-2{
+        margin-top: 32px;
+        padding-top: 64px;
+        padding-bottom: 64px;
+        background-color: #ffffff;
+        .wrapper{
+            padding: 0 32px;
+            h2{
+                text-align: center;
+                font-size: 1.5rem;
+                padding-bottom: 32px;
+            }
+            .media{
+                margin-top: 25px; 
+                article{
+                   
+                    .media-container{
+                       margin-top: 30px;
+                        div.img{
+                            width: 43%; 
+                            padding-right: 20px;
+                        }
+                        div{
+                            width: 50%;
+                           
+                            display: inline-block;
+                            vertical-align: top;
+                            h4{
+                                font-size: .875rem;
+                                font-family: Rubik, sans-serif;
+                                margin: 0 0 0.5em;
+                                line-height: 1.4;
+                            }
+                            h3{
+                                font-size: 1.35rem;
+                                font-family: "Playfair Display", serif;
+                                text-transform: none;
+                                font-weight: 700;
+                                margin: 0 0 0.5em;
+                                line-height: 1.4;
+                            }
+                            h5{
+                                color: #ff4b49;
+                                font-size: .875rem;
+                                font-weight: 400;
+                                margin: 16px 0 7px 0;
+                            }
+
+                            img{
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                    }
+                    @media screen and (min-width: 1040px) {
+                        .media-container{ 
+                            margin-top: 0;
+                            padding-bottom: 30px;       
+                        }
+                    }         
+                }
+            }
+            @media screen and (min-width: 1040px) {
+                .media{
+                    width: 41%;
+                    display: inline-block; 
+                    margin-top: 0;       
+                    padding-left: 30px; 
+                    vertical-align: top;
+                }
+            }              
+            .wrapper-image{
+                
+                .latest{
+                    h4{
+                        font-size: .875rem;
+                        margin: 32px 0 18px 0;
+                        line-height: 1.4;
+                    }
+                    a{
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    h3{
+                        font-size: 2.3rem;
+                        max-width: 80%;
+                        font-family: 'Playfair Display', serif;
+                        margin: 16px 0 18px 0;
+                        line-height: 1.4;
+                        
+                    }  
+                    span{
+                        display: block;
+                        margin-bottom: 32px;
+                        margin-top: 32px;
+                        width: 40px;
+                        border: none;
+                        height: 2px;
+                        text-align: left;
+                        background-color: #ff4b49;
+                    }
+                   p{
+                    font-size: 1.125rem;
+                    line-height: 1.6;
+                    max-width: 80%;
+                    font-family: "Crimson Text", serif;
+                    margin: 0 0 16px 0;
+
+
+                   }
+                   h5{
+                    margin: 32px 0 7px 0;
+                    font-size: .875rem; 
+                    line-height: 1.4; 
+                     }
+                   h6{
+                    margin: 8px 0 7px 0;
+                    font-size: .875rem;
+                    color: #ff4b49;
+                    line-height: 1.4;
+
+                   }
+
+                }
+            }
+            @media screen and (min-width: 1040px) {
+                .wrapper-image{
+                    width: 58%;
+                    display: inline-block; 
+                    vertical-align: top;
+                }
+            }      
+        }
+    }
+    .section-3{
+        margin-top: 32px;
+        padding-top: 64px;
+        padding-bottom: 64px;
+        background-color: #ffffff;
+        .wrapper-3{
+            padding: 0 32px;
+            h2{
+                text-align: center;
+                font-size: 1.5rem;
+                padding-bottom: 32px;
+            }
+            .grid-container{
+                padding: 0 32px;
+                
+                .grid{
+                    vertical-align: top;
+                    // padding-left: 32px;
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                    h3{
+                        font-family: "Playfair Display", serif;
+                        font-weight: 700;
+                        font-size: 1.25rem;
+                        margin: 16px 0 10px 0;
+                        line-height: 1.4;
+                        text-align: center;
+                    }
+                    h5{
+                        color: #ff4b49;
+                        font-size: .875rem;
+                        font-weight: 400;
+                        margin: 16px 0 7px 0;
+                        text-align: center;
+                    } 
+                }
+                 
+            }
+        }
+    }
+    .section-4{
+        padding: 16px;
+        margin-top: 32px;
+        .wrapper{
+            padding-bottom: 32px;
+            padding-top: 32px;
+            background-color: #ffe55c;
+                h3{
+                    font-size: 1.5rem;
+                    font-family: "Playfair Display", serif;
+                    text-transform: none;
+                    font-weight: 700;
+                    margin: 0 0 0.5em;
+                    line-height: 1.4;
+                    text-align: center;
+                }
+                p{
+                    margin: 0 0 16px 0;
+                    font-family: Rubik, sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 1rem;
+                    text-align: center;
+                }
+        }
+        .subscribe{
+            text-align: center;
+            input{
+                border: 0;
+                border-bottom-style: solid;
+                border-width: 2px;
+                font-family: Rubik, sans-serif;
+                font-weight: 400;
+                background-color: transparent;
+                width: 40%;
+                padding: 8px 0;
+                font-size: 16px;
+                line-height: 1.6;
+                height: 37px;
+                outline: none;
+                &::placeholder{
+                    color: #333333;
+                }
+                &:focus::placeholder{
+                    color: grey;
+                }
+                
+            } 
+            button{
+                background-color: #333333;
+                border: none;
+                border-bottom: 2px solid #333333;
+                height: 37px;
+                padding: 8px 16px;
+                cursor: pointer;
+                
+                span{
+                    color: #ffe55c;
+                    font-size: 16px;
+                    font-family: rubik, sans-serif; 
+                }
+            } 
+        }
+    }
+    
+}
